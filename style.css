@@ -1,0 +1,55 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+.van-tabs__nav {
+    background-color: #000;
+}
+.van-tab {
+    color: #8d8d8d;
+}
+.van-tab--active {
+    color: #fff;
+}
+.box {
+   background-color: #000;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.box-item {
+    color: #fff;
+    width: calc(50% - 5px);
+    box-sizing: border-box;
+}
+.box-item img {
+    width: 100%;
+    height: 136px;
+}
+.box-item p {
+    padding: 10px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    line-height: 20px;
+}
+.box-item p a {
+    color: #fff;
+}
+.box-item-tag {
+    background-color: #8d8d8d;
+    color: #000;
+    padding: 3px 10px;
+    height: 20px;
+    word-break: none;
+}
+.box-end {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}

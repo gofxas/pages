@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个收集华人国语成人影片的小破站</title>
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/vant@2.12.37/lib/vant.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vant@2.12.37/lib/index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <van-tabs v-model="active" @change="changeHandler" sticky>
+            <van-tab v-for="title in list" :title="title" :name="title">
+                <div class="box">
+                    <div class="box-item" v-for="item in articles" :key="item.name">
+                        <img :src="'./images/'+item.thumb" alt="">
+                        <p><a :href="item.url" target="_blank">{{item.name}}</a> </p>
+                    </div>
+                    <div class="box-end">没有更多了...</div>
+                </div>
+            </van-tab>
+        </van-tabs>
+        
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
