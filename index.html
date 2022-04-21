@@ -52,10 +52,13 @@
 
                     return
                 }
-                fetch('https://mg.0231019.top/api/login?name='+this.loginName,{
+                fetch('https://mg.0231019.top/api/login',{
                     method: "POST",
                     mode: 'cors',
-                    credentials: "include"
+                    credentials: "include",
+                    body: JSON.stringify({
+                        name: this.loginName
+                    })
                 })
                     .then(response => response.json())
                     .then(res => {
