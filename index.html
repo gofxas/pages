@@ -53,6 +53,7 @@
                     return
                 }
                 fetch('https://mg.0231019.top/api/login?name='+this.loginName,{
+                    method: "POST",
                     mode: 'cors',
                     credentials: "include"
                 })
